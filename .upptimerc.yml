@@ -1,31 +1,30 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Configuración Principal
+owner: ferreteriaelgreco
+repo: statuspage
 
+# Sitios e servizos a Monitorear
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: "ERP Odoo Corporativo (Facturación, Web principal...)"
+    url: https://ferreteriaelgreco.odoo.com
+    method: GET
 
-status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  - name: "Microsoft 365 (Contas corporativas @ferreteriaelgreco.es)"
+    url: https://microsoftonline.com
+    method: GET
+
+  - name: "Zoho Mail (Correo corporativo @practicas.ferreteriaelgreco.es)"
+    url: https://zoho.com
+    method: GET
+
+# Configuración páxina Estado Pública
+status-page:
+  name: "Páxina de estado de servizos - Ferretería El Greco"
+  introMessage: "Panel de estado das infraestruturas tecnolóxicas de Ferretería el Greco. Páxina en construcción. Para calquera dúbida contacta na ligazón superior"
+  cname: status.ferreteriaelgreco.es
+  baseUrl: /
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: "Apertura de incidencia - Contacto"
+      url: https://www.ferreteriaelgreco.es/contactus/soporteplataformas
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - ferreteriaelgreco
